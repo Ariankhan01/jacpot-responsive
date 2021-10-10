@@ -1,0 +1,1075 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+:root {
+	--hfont: 'Anton', sans-serif;
+	--hfont2: 'Nunito', sans-serif;
+	--hclr: #fcb100;
+	--pclr: #fff;
+	--bgclr: #150035;
+	--bgclr2: #0b001b;
+
+}
+
+/*=============
+fonts css ends
+===============*/
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+ul {
+	list-style: none;
+}
+
+
+/*==============
+common css ends 
+================*/
+.heading h2 {
+	font-family: var(--hfont);
+	font-size: 48px;
+	color: var(--hclr);
+	text-transform: capitalize;
+	text-shadow: -4px -3px 30px #44064A;
+
+}
+
+.mr {
+	margin-right: 30px;
+}
+
+/*=============
+heading css ends
+===============*/
+#navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#navbar .navbar {
+	margin-top: 10px;
+	background: transparent !important;
+	z-index: 999999;
+	position: relative;
+
+}
+
+#navbar .navbar-brand img {
+	width: 215px;
+	height: 90px;
+
+}
+
+#navbar .navbar-expand-lg .navbar-collapse {
+	margin-top: 42px;
+}
+
+#navbar .navbar-nav .nav-item a {
+	font-family: var(--hfont2);
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: 35px;
+	color: #944bff !important;
+}
+
+
+#navbar .collapse .btn {
+	font-family: var(--hfont);
+	font-size: 20px;
+	color: #fff;
+	background: #bb0e99;
+	margin-right: 22px;
+	margin-bottom: 10px;
+	line-height: 50px;
+	padding: 0 27px !important;
+	outline: none !important;
+	border: 0 !important;
+	position: relative;
+}
+
+#navbar .collapse .btn::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #2e036f;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+}
+
+#navbar .collapse .btn:first-of-type::before {
+	background: #661355;
+}
+
+
+#navbar .collapse .log {
+	background: #6e22da;
+	margin-right: 0;
+}
+
+
+.modal-title {
+	font-family: var(--hfont);
+	font-size: 25px;
+	letter-spacing: 1px;
+	color: #fcb100 !important;
+}
+
+#navbar .modal {
+	z-index: 99999999;
+}
+
+
+/*=============
+navbar css ends
+===============*/
+#banner {
+
+	background: var(--bgclr);
+	padding-bottom: 240px;
+
+}
+
+#banner .banner-area {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+#banner .banner-area .banner-img {
+	position: absolute;
+	top: 0;
+	left: -195px;
+	padding-top: 160px;
+
+}
+
+#banner .banner-area .banner-text h6 {
+	font-family: var(--hfont2);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 50px;
+	padding-top: 247px;
+	color: #fff;
+	margin-bottom: -20px;
+	padding-left: 10px;
+}
+
+#banner .banner-area .banner-text h1 {
+	font-family: var(--hfont);
+	font-size: 331px;
+	color: var(--hclr);
+	line-height: 331px;
+	margin-top: 0 !important;
+	text-shadow: -4px -3px 20px #44064A;
+
+}
+
+#banner .banner-area .banner-text p {
+	font-family: var(--hfont2);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #fff;
+	margin-top: -4px;
+}
+
+#banner .banner-area .banner-text .btn {
+	font-family: var(--hfont);
+	font-size: 20px;
+	color: #fff;
+	padding: 0 27px;
+	line-height: 48px;
+	text-align: center;
+	background: linear-gradient(to top, #1c083c 0%, #9a4bfa 100%);
+	outline: none;
+	border: 0;
+	margin-left: 165px;
+	margin-top: 5px;
+	position: relative;
+}
+
+#banner .banner-area .banner-text .btn::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #2e036f;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+}
+
+/*=============
+banner css ends
+===============*/
+#games {
+	background: var(--bgclr2)
+}
+
+#games .heading {
+	text-align: center;
+	margin-top: 185px;
+	margin-bottom: 55px;
+	line-height: 50px;
+	letter-spacing: 1px;
+}
+
+#games .games-item {
+	margin-bottom: 100px;
+}
+
+#games .games-item .img-1 {
+	margin-right: 30px !important;
+	position: relative;
+}
+
+#games .games-item .img-2 {
+	margin-right: 30px !important;
+	position: relative;
+}
+
+#games .games-item .img-3 {
+	position: relative;
+}
+
+#games .games-item .games-overlay {
+	width: 100%;
+	height: 0%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(18, 7, 61, 0.85);
+	text-align: center;
+	opacity: 0;
+	transition: all linear .5s;
+}
+
+#games .games-item .item:hover .games-overlay {
+	opacity: 1;
+	height: 100%;
+}
+
+#games .games-item .games-overlay h3 {
+	font-family: var(--hfont);
+	font-size: 24px;
+	color: #fff !important;
+	text-transform: capitalize;
+	margin-top: 165px
+}
+
+#games .games-item .games-overlay .btn {
+	font-family: var(--hfont);
+	font-size: 20px;
+	color: #fff;
+	padding: 0 27px;
+	line-height: 48px;
+	text-align: center;
+	background: linear-gradient(to top, #1c083c 0%, #9a4bfa 100%);
+	outline: none;
+	border: 0;
+	margin-top: 35px;
+	position: relative;
+}
+
+#games .games-item .games-overlay .btn::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #3a0090;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+}
+
+
+#games .box-item .box {
+	text-align: center;
+	background: #6318d0;
+	margin-right: 1px;
+	padding: 0 45px;
+	border-radius: 5px;
+	position: relative;
+
+}
+
+#games .box-item .box::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #2e036f;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+}
+
+#games .container {
+	position: relative;
+}
+
+#games .box-item .box-1 {
+	position: absolute;
+	top: -95px;
+	left: 35px;
+	box-shadow: 5px 5px 25px 5px #000000;
+	z-index: 999;
+}
+
+#games .box-item .box-2 {
+	position: absolute;
+	top: -95px;
+	left: 421px;
+	box-shadow: 5px 5px 25px 5px #000000;
+	z-index: 99;
+}
+
+#games .box-item .box-3 {
+	position: absolute;
+	top: -95px;
+	box-shadow: 5px 5px 25px 5px #000000;
+	left: 762px;
+	z-index: 9;
+}
+
+#games .box-item .box h2 {
+	font-family: var(--hfont);
+	font-size: 50px;
+	color: var(--hclr);
+	padding-top: 30px;
+
+
+}
+
+#games .box-item .box h3 {
+	font-family: var(--hfont);
+	font-size: 32px;
+	color: #fff;
+	padding-top: 15px;
+
+}
+
+#games .box-item .box p {
+	font-family: var(--pfont);
+	font-size: 16px;
+	color: #fff;
+	padding-bottom: 25px;
+
+
+}
+
+/*=============
+games css ends
+===============*/
+#spin {
+	background: var(--bgclr);
+}
+
+#spin .spin-area {
+	margin-top: 100px;
+}
+
+#spin .spin-area .image-area {
+	padding-bottom: 20px;
+}
+
+#spin .spin-area .text-area {
+	margin-left: 30px;
+}
+
+#spin .spin-area .text-area h2 {
+	font-family: var(--hfont);
+	font-size: 48px;
+	color: var(--hclr);
+	margin-bottom: 45px;
+	margin-top: 80px;
+	text-shadow: -4px -3px 30px #44064A;
+
+}
+
+
+#spin .spin-area .text-area p {
+	font-family: var(--pfont);
+	font-size: 16px;
+	color: #fff;
+	line-height: 26px;
+
+}
+
+#spin .spin-area .text-area p:last-of-type {
+	margin-top: 10px;
+}
+
+#spin .spin-area .text-area .btn {
+	font-family: var(--hfont);
+	font-size: 20px;
+	color: #fff;
+	padding: 0 27px;
+	line-height: 48px;
+	text-align: center;
+	background: linear-gradient(to top, #1c083c 0%, #9a4bfa 100%);
+	outline: none;
+	border: 0;
+	margin-top: 35px;
+	position: relative;
+}
+
+#spin .spin-area .text-area .btn::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #3a0090;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+}
+
+/*=============
+spin css ends
+===============*/
+
+#price {
+	background: var(--bgclr2);
+
+}
+
+#price .heading {
+	margin-top: 105px;
+	margin-bottom: 90px;
+}
+
+#price .price-section {
+	margin-bottom: 90px;
+}
+
+
+#price .price-section .box-item {
+	background: linear-gradient(to top, #1c083c 0%, #9a4bfa 100%);
+	text-transform: capitalize;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	transition: all linear .5s;
+}
+
+#price .price-section .box-item:hover {
+	transform: translateY(30px);
+}
+
+#price .price-section .box-item .plan {
+	border-bottom: 2px solid #6428b4;
+	position: relative;
+}
+
+#price .price-section .box-item .plan h2 {
+	font-family: var(--hfont);
+	font-size: 32px;
+	text-shadow: 0px 4px 2px rgba(88, 19, 184, 0.5);
+	padding-top: 60px;
+}
+
+
+#price .price-section .box-item .plan h3 {
+	font-family: var(--hfont2);
+	font-size: 50px;
+	padding-top: 3px;
+}
+
+
+#price .price-section .box-item .plan p {
+	font-family: var(--hfont2);
+	font-size: 14px;
+	margin-top: -10px;
+	padding-bottom: 8px;
+}
+
+#price .price-section .box-item .plan .feature-box {
+	background: #ce1aac;
+	position: absolute;
+	top: -54px;
+	left: 0;
+	opacity: 0;
+	transition: all linear .5s;
+	border-radius: 3px;
+	width: 100%;
+}
+
+#price .price-section .box-item .plan .feature-box::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #661355;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+
+}
+
+#price .price-section .box-item:hover .plan .feature-box {
+	opacity: 1;
+}
+
+#price .price-section .box-item .plan .feature-box h4 {
+	font-family: var(--hfont2);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 50px;
+	color: #fff;
+}
+
+#price .price-section .box-item .plan-text ul {
+	margin-top: 25px;
+}
+
+
+#price .price-section .box-item .plan-text ul li {
+	margin-bottom: 13px;
+}
+
+#price .price-section .box-item .plan-text ul li:last-of-type {
+	padding-bottom: 55px;
+}
+
+#price .price-section .box-item .plan-text {
+	position: relative;
+}
+
+#price .price-section .box-item .plan-text .btn {
+	font-family: var(--hfont);
+	font-size: 20px;
+	color: #fff;
+	padding: 0 27px;
+	line-height: 48px;
+	text-align: center;
+	background: linear-gradient(to top, #1c083c 0%, #9a4bfa 100%);
+	outline: none;
+	border: 0;
+	margin-top: 35px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all linear .5s;
+}
+
+#price .price-section .box-item .plan-text .btn::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #491890;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+}
+
+#price .price-section .box-item:hover .plan-text .btn {
+	background: #ce1aac;
+
+}
+
+
+#price .price-section .box-item:hover .plan-text .btn::before {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: #661355;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+}
+
+/*=============
+price css ends
+===============*/
+
+
+#tournament {
+	background: var(--bgclr);
+	padding-bottom: 100px;
+}
+
+#tournament .tournament-section .question {
+	margin-right: 30px;
+	box-sizing: border-box;
+}
+
+#tournament .tournament-section .question h2 {
+	font-family: var(--hfont);
+	font-size: 40px;
+	color: var(--hclr);
+	margin-bottom: 45px;
+	margin-top: 80px;
+	text-shadow: -4px -3px 30px #44064A;
+	position: relative;
+}
+
+#tournament .tournament-section .question h2::before {
+	content: '';
+	width: 94%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: 78px;
+	left: 0;
+}
+
+#tournament .tournament-section .question h2::after {
+	content: '';
+	width: 94%;
+	height: 2px;
+	background: #290a59;
+	position: absolute;
+	top: 80px;
+	left: 0;
+}
+
+#tournament .tournament-section .question .box {
+	position: relative;
+}
+
+#tournament .tournament-section .question .box::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #ce8730;
+	opacity: 0;
+	transition: all linear .5s;
+}
+
+#tournament .tournament-section .question .box:hover::before {
+	border: 1px solid #ce8730;
+	opacity: 1;
+
+}
+
+#tournament .tournament-section .question .box label {
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0px 0px 30px;
+}
+
+
+#tournament .tournament-section .question .box ul li {
+	cursor: pointer;
+	margin-right: 50px;
+	position: relative;
+
+}
+
+#tournament .tournament-section .question .box ul li ul {
+	position: absolute;
+	top: 0px;
+
+
+}
+
+#tournament .tournament-section .question .box ul li ul li {}
+
+
+#tournament .tournament-section .question .box p {
+	font-family: var(--pfont);
+	font-size: 16px;
+	color: #fff;
+	padding: 0px 0px 10px 30px;
+	display: none;
+}
+
+#tournament .tournament-section .today .time {
+	display: flex;
+}
+
+
+#tournament .tournament-section .today h2 {
+	font-family: var(--hfont);
+	font-size: 40px;
+	color: var(--hclr);
+	margin-bottom: 45px;
+	margin-top: 80px;
+	text-shadow: -4px -3px 30px #44064A;
+	position: relative;
+
+}
+
+
+#tournament .tournament-section .today h2::before {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: 78px;
+	left: 0;
+
+}
+
+#tournament .tournament-section .today h2::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #290a59;
+	position: absolute;
+	top: 80px;
+	left: 0;
+
+}
+
+
+#tournament .tournament-section .today .time h3 {
+	font-family: var(--pfont);
+	font-size: 20px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+
+#tournament .tournament-section .today .time #countdown {
+	color: var(--hclr);
+	display: flex;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+#tournament .tournament-section .today .time #countdown #days .wrapper {
+	padding: 0px 12px;
+	margin-left: 0;
+	margin-right: 15px;
+}
+
+#tournament .tournament-section .today .time #countdown #hours .wrapper {
+	padding: 0px 12px;
+	margin-left: 0;
+	margin-right: 15px;
+}
+
+#tournament .tournament-section .today .time #countdown #minutes .wrapper {
+	padding: 0px 5px;
+	margin-left: 0;
+	margin-right: 15px;
+}
+
+#tournament .tournament-section .today .time #countdown #seconds .wrapper {
+	padding: 0px 5px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+
+#tournament .tournament-section .today .time #countdown .wrapper {
+	border: 1px solid var(--hclr);
+	text-align: center;
+	font-family: var(--pfont);
+	font-size: 20px;
+	box-sizing: border-box;
+	float: left;
+
+}
+
+#tournament .tournament-section .today .time #countdown .wrapper:last-of-type {
+	margin-right: 0;
+	margin-left: 15px;
+}
+
+#tournament .tournament-section .today .players .box {
+
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	position: relative;
+}
+
+#tournament .tournament-section .today .box::before {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+}
+
+#tournament .tournament-section .today .box::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #290a59;
+	position: absolute;
+	top: 42px;
+	left: 0;
+
+}
+
+#tournament .tournament-section .today .players .box:first-of-type {
+	margin-top: 60px;
+}
+
+#tournament .tournament-section .today .players .box .img {
+	width: 60%;
+	text-align: center;
+}
+
+
+#tournament .tournament-section .today .players .box .price {
+	width: 20%;
+	text-align: right;
+}
+
+#tournament .tournament-section .today .players .box .name {
+	width: 30%;
+}
+
+
+
+
+#tournament .tournament-section .today .players .box h5 {
+	font-family: var(--pfont);
+	font-size: 16px;
+	color: #fff;
+}
+
+#tournament .tournament-section .today .players .box .img img {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+#tournament .tournament-section .today .players .box p {
+	font-family: var(--pfont);
+	font-size: 16px;
+	color: #fff;
+
+}
+
+/*=============
+tournament css ends
+===============*/
+
+
+#payment {
+	background: linear-gradient(to top, #1c083c 0%, #9a4bfa 100%);
+}
+
+
+#payment .payment-section .payment-offer h2 {
+	font-family: var(--hfont);
+	font-size: 32px;
+	color: #fff;
+	text-shadow: 2px 6px 2px #5813B8;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+#payment .payment-section .payment-offer input {
+	background: transparent;
+	border: 1px solid #0b001b;
+	line-height: 40px;
+	padding-right: 286px;
+	padding-left: 20px;
+	margin-right: 0;
+	margin-bottom: 35px;
+
+}
+
+
+#payment .payment-section .payment-offer a {
+	padding: 0 22px;
+	border: 1px solid #0b001b;
+	line-height: 40px;
+	text-align: center;
+	color: #0b001b;
+	margin-left: 0;
+
+}
+
+#payment .payment-section .payment-method {
+	margin-left: 112px;
+}
+
+#payment .payment-section .payment-method h2 {
+	font-family: var(--hfont);
+	font-size: 32px;
+	color: #fff;
+	text-shadow: 2px 6px 2px #5813B8;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+#payment .payment-section .payment-method a img {
+	margin-right: 15px;
+}
+
+/*=============
+payment css ends
+===============*/
+
+#footer {
+	background: var(--bgclr2);
+	padding-bottom: 48px;
+}
+
+#footer .jacpot h2 {
+	font-family: var(--hfont);
+	font-size: 32px;
+	color: #fff;
+	margin-top: 50px;
+}
+
+#footer .jacpot p {
+	font-family: var(--pfont);
+	font-size: 16px;
+	color: #fff;
+	padding-top: 10px;
+	line-height: 26px;
+}
+
+#footer .jacpot a {
+	width: 50px;
+	padding: 10px 0;
+	background: #9344f4;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+	margin-right: 20px;
+	margin-top: 10px;
+	transition: all linear .5s;
+}
+
+#footer .jacpot a:last-of-type {
+	margin-right: 0;
+}
+
+#footer .jacpot a:hover {
+	background: #f231ce;
+
+}
+
+#footer .link h2 {
+	font-family: var(--hfont);
+	font-size: 32px;
+	color: #fff;
+	margin-top: 50px;
+
+}
+
+#footer .link .link-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer .link .link-item ul {
+
+	padding: 0 !important;
+}
+
+#footer .link .link-item ul:last-of-type {
+	text-align: right;
+}
+
+#footer .link .link-item ul li a {
+	font-family: var(--pfont);
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	margin-top: 17px;
+
+}
+
+#footer .info {
+	margin-top: 0 !important;
+}
+
+#footer .info h2 {
+	font-family: var(--hfont);
+	font-size: 32px;
+	color: #fff;
+	margin-top: 50px;
+}
+
+#footer .info .item {
+	display: flex;
+	margin-top: 17px;
+}
+
+#footer .info .item:last-of-type {
+	margin-top: 30px;
+}
+
+#footer .info .item img {
+	margin-right: 30px;
+}
+
+#footer .info .item p {
+	font-family: var(--pfont);
+	font-size: 16px;
+	color: #fff;
+}
+
+#footer-bottom {
+	background: var(--bgclr2);
+	border-top: 1px solid #6116d2;
+	text-align: center;
+
+}
+
+#footer-bottom p {
+	font-family: var(--pfont);
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	padding: 18px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============
+footer css ends
+===============*/
