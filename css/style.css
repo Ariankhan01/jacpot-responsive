@@ -82,6 +82,11 @@ heading css ends
 	font-weight: 600;
 	margin-right: 35px;
 	color: #944bff !important;
+	transition: all linear .5s;
+}
+
+#navbar .navbar-nav .nav-item a:hover{
+	color: #fff !important;
 }
 
 
@@ -89,7 +94,7 @@ heading css ends
 	font-family: var(--hfont);
 	font-size: 20px;
 	color: #fff;
-	background: #bb0e99;
+	background: linear-gradient(to top, #1c083c 0%, #9a4bfa 100%);
 	margin-right: 22px;
 	margin-bottom: 10px;
 	line-height: 50px;
@@ -97,6 +102,11 @@ heading css ends
 	outline: none !important;
 	border: 0 !important;
 	position: relative;
+	transition: all linear .5s;
+}
+
+#navbar .collapse .btn:hover{
+	background: #ce1aac;
 }
 
 #navbar .collapse .btn::before {
@@ -104,15 +114,15 @@ heading css ends
 	width: 100%;
 	height: 5px;
 	background: #2e036f;
-	position: absolute;
+	position:absolute;
 	bottom: 0;
 	left: 0;
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
-
+transition: all linear .5s;
 }
 
-#navbar .collapse .btn:first-of-type::before {
+#navbar .collapse .btn:hover::before{
 	background: #661355;
 }
 
@@ -202,6 +212,11 @@ navbar css ends
 	margin-left: 165px;
 	margin-top: 5px;
 	position: relative;
+	transition: all linear .5s;
+}
+
+#banner .banner-area .banner-text .btn:hover{
+	background: #ce1aac;
 }
 
 #banner .banner-area .banner-text .btn::before {
@@ -215,6 +230,10 @@ navbar css ends
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 
+}
+
+#banner .banner-area .banner-text .btn:hover::before{
+	background: #661355;
 }
 
 /*=============
@@ -287,6 +306,11 @@ banner css ends
 	border: 0;
 	margin-top: 35px;
 	position: relative;
+	transition: all linear .5s;
+}
+
+#games .games-item .games-overlay .btn:hover{
+	background: #ce1aac;
 }
 
 #games .games-item .games-overlay .btn::before {
@@ -299,10 +323,12 @@ banner css ends
 	left: 0;
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
-
+transition: all linear .5s;
 }
 
-
+#games .games-item .games-overlay .btn:hover::before{
+	background: #661355;
+}
 #games .box-item .box {
 	text-align: center;
 	background: #6318d0;
@@ -434,6 +460,11 @@ games css ends
 	border: 0;
 	margin-top: 35px;
 	position: relative;
+	transition: all linear .5s;
+}
+
+#spin .spin-area .text-area .btn:hover{
+	background: #ce1aac;
 }
 
 #spin .spin-area .text-area .btn::before {
@@ -446,7 +477,11 @@ games css ends
 	left: 0;
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
+transition: all linear .5s;
+}
 
+#spin .spin-area .text-area .btn:hover::before{
+	background: #661355;
 }
 
 /*=============

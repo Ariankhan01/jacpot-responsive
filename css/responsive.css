@@ -52,7 +52,7 @@
 
 
 	#banner .banner-area .banner-text h6 {
-		padding-top: 485px;
+		padding-top: 550px;
 		text-align: center;
 	}
 
@@ -89,6 +89,7 @@
 	#games .box-item .box-1 {
 		top: 45px;
 		left: 10px;
+		padding: 0 18px;
 		box-shadow: none;
 
 	}
